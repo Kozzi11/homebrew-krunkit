@@ -9,7 +9,7 @@ class LibkrunEfi < Formula
   # Upstream only supports Hypervisor.framework on arm64
   depends_on arch: :arm64
   depends_on "dtc"
-  depends_on "slp/homebrew-krunkit/virglrenderer"
+  depends_on "kozzi11/homebrew-krunkit/virglrenderer"
 
   def install
     system "touch", "init/init"
