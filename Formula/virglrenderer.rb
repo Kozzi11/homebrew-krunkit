@@ -5,11 +5,6 @@ class Virglrenderer < Formula
   sha256 "09d000623fbdb966cb604eb48c962a0815e8142383e6066d6494809335b76dbb"
   license "MIT"
 
-  bottle do
-    root_url "https://raw.githubusercontent.com/slp/homebrew-krunkit/master/bottles"
-    sha256 cellar: :any, arm64_sequoia: "e124a40a85eeb639eaff47a1964095bb5a8e107a9b3810d2e495971e62f9a689"
-  end
-
   depends_on "meson" => :build
   depends_on "ninja" => :build
   depends_on "pkg-config" => :build

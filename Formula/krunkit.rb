@@ -5,11 +5,6 @@ class Krunkit < Formula
   sha256 "d8162e620dc96329db449ede9ee69edb0f4c70ab1ef9c664ce8b251f6310e16c"
   license "Apache-2.0"
 
-  bottle do
-    root_url "https://raw.githubusercontent.com/slp/homebrew-krunkit/master/bottles"
-    sha256 cellar: :any, arm64_sequoia: "d9e5e7227206e07c59c3ef1c58712b21cab4e4959884e086be4de7d6ac8107cf"
-  end
-
   depends_on "rust" => :build
   # We depend on libkrun, which only supports Hypervisor.framework on arm64
   depends_on arch: :arm64
