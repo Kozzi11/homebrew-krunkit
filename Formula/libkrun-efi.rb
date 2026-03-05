@@ -1,14 +1,9 @@
 class LibkrunEfi < Formula
   desc "Dynamic library providing KVM-based process isolation capabilities"
   homepage "https://github.com/containers/libkrun"
-  url "https://github.com/containers/libkrun/archive/refs/tags/v1.16.0.tar.gz"
-  sha256 "04b6f01f44e263d168757ebcd9bc037d7c5836c1987a547c6b2fa5837abe1ab1"
+  url "https://github.com/containers/libkrun/archive/refs/tags/v1.17.4.tar.gz"
+  sha256 "2708a3c207c5493ee02de1781836c2511e54eb280633fcc7058fee983a6c2fe3"
   license "Apache-2.0"
-
-  bottle do
-    root_url "https://raw.githubusercontent.com/slp/homebrew-krunkit/master/bottles"
-    sha256 cellar: :any, arm64_sequoia: "3f4f48595bed22bf942a28fc946ae6583c5665bf5e9d14768cf992bf8f8b9df4"
-  end
 
   depends_on "rust" => :build
   # Upstream only supports Hypervisor.framework on arm64
